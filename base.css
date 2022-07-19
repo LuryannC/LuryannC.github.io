@@ -16,6 +16,20 @@
   border-radius: 100px;
 }
 
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+/* -- Navbar text colour -- */
+.nav-text-color-override{
+  color: white!important;
+}
 
 /*--- Media Queries ---*/
 @media (max-width: 992px){
@@ -83,41 +97,45 @@
     width: 100vh;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 200px) {
   .resizing {
-    width: 28vh;
+    width: 22vh;
+    height: 52%;
   }
 }
 
 @media (min-width: 576px) {
   .resizing {
     width: 20.4vh;
+    height: 52%;
   }
 }
 
 @media (min-width: 768px) {
   .resizing {
     width: 20.4vh;
+    height: 52%;
   }
 }
 
 @media (min-width: 992px) {
   .resizing {
     width: 20vh;
+    height: 52%;
   }
 }
 
 @media (min-width: 1200px) {
   .resizing {
     width: 23.2vh;
-    height: 23.2vh;
+    height: 52%;
   }
 }
 
 @media (min-width: 1300px) {
   .resizing {
-    width: 34vh;
-    height: 34vh;
+    width: 24vh;
+    height: 52%;
   }
 }
 

@@ -11,17 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="base.css">       
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/013daa6b48.js" crossorigin="anonymous"></script>
-
-
-        <script>
-            var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-            trigger: 'focus'
-            })
-
-        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -31,23 +22,24 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#">Luryann A. Cervi</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <a class="navbar-brand text-light" href="#" style="padding-left: 10%;">Luryann A. Cervi</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto" style="
+                    align-items: center;">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link nav-text-color-override" href="#">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link nav-text-color-override" href="#">Projects</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link nav-text-color-override" href="#">Resume</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link nav-text-color-override" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -55,10 +47,11 @@
         </nav>
         <section id="intro" class="align-items-centre main-image container-fluid pt-4 pb-4 my-sm-auto" style="height: 30%;">
         <div id="main-container" class="container-fluid my-auto mx-auto">
-            <div class="row p-4 pb-0 pe-lg-5 pt-lg-5 mx-auto align-items-center rounded-3 shadow-lg bg-light" style="--bs-bg-opacity: 0.85; width: 90%;">
-                <div class="col-lg-7 col-md-7 col-sm-5 p-3 p-lg-5 pt-lg-3">
+            <div class="row p-4 pb-0 pe-lg-5 pt-lg-5 mx-auto align-items-center rounded-3 shadow-lg bg-light" style="--bs-bg-opacity: 0.92; width: 90%;">
+                <div class="col-lg-7 col-md-7 col-sm-5 p-3 p-lg-5 pt-lg-3" style="
+                text-align: center;">
                     <h1 class="display-4 fw-bold lh-1">Luryann A. Cervi</h1>
-                    <p class="lead">Game developer, 3D modelling, Illustrator & Back-end developer.</p>
+                    <p class="lead pt-2">Game developer, 3D modelling, Illustrator & Back-end developer.</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 m-sm-auto mx-xs-auto offset-lg-1 p-0 overflow-hidden">
                     <img class="img-fluid img-sm-2 mx-auto pe-auto" src="Images//all.png" width="420">
@@ -66,7 +59,7 @@
             </div>
         </div>
         </section>
-        <section id="projects">
+        <section id="projects" style="background-color: #ececec;">
             <div class="container-fluid pt-sm-2 mx-lg-auto">
                 <div class="text-center" style="margin-top: 6%;">
                     <h1 class="display-4">Principal skills</h1>
@@ -91,7 +84,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <a href="illustrations.html" style="text-decoration: none; color:black;">
-                            <img src="Images/preview/geisha-nft.png" class="img-thumbnail shadow-lg border-4 resizing" style="border-radius: 50%;">
+                            <img src="Images/preview/geisha-nft.png" class="img-thumbnail shadow-lg border-1 resizing" style="border-radius: 50%;">
                             <h3 class="display-6">Illustration</h3>
                             <p class="lead p-lg-4">​Describe the service and include any relevant details. Click to edit the text.</p>
                         </a>
@@ -124,7 +117,7 @@
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <div id="form-message-warning" class="mb-4"></div>
                                 <div id="form-message-success" class="mb-4"></div>
-                                <form method="post" id="contactForm" name="contactForm" novalidate="novalidate">
+                                <form action="https://formsubmit.co/kayorx255@gmail.com" method="POST" id="contactForm" name="contactForm">
                                     <div class="row">
                                         <div class="col-md-6" style="padding: 0.4rem;">                                            
                                             <div class="form-group">
@@ -153,6 +146,7 @@
                                         <div class="col-md-12 text-center" style="padding: 0.4rem;">                                            
                                             <div class="form-group">                                                
                                                 <input type="submit" value="Send Message" class="btn btn-dark">
+                                                <input type="hidden" name="_captcha" value="false">
                                                 <div class="submitting"></div>
                                             </div>
                                         </div>
@@ -166,26 +160,6 @@
         </section>
         
         <script src="js/three.js" async defer></script>
-        <script>
-            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-            })
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-
-            function display_hidden_div(current_div_id, previous_div_id) {
-                var current_div = document.getElementById(div_id);
-                var previous_div = document.getElementById(previous_div_id);
-                if (current_div.style.display == "none") {
-                    current_div.style.display = "block";
-                    previous_div.style.display = "none";
-                }
-            }
-
-            var card = document.getElementById("ma")
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
