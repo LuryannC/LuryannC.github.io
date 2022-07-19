@@ -110,12 +110,14 @@
 @media (min-width: 1200px) {
   .resizing {
     width: 23.2vh;
+    height: 23.2vh;
   }
 }
 
 @media (min-width: 1300px) {
   .resizing {
     width: 34vh;
+    height: 34vh;
   }
 }
 

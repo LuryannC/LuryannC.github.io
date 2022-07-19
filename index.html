@@ -10,9 +10,18 @@
         <title>Luryann A. Cervi</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="base.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="base.css">       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/013daa6b48.js" crossorigin="anonymous"></script>
+
+
+        <script>
+            var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+            trigger: 'focus'
+            })
+
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -61,7 +70,7 @@
             <div class="container-fluid pt-sm-2 mx-lg-auto">
                 <div class="text-center" style="margin-top: 6%;">
                     <h1 class="display-4">Principal skills</h1>
-                    <p class="lead pt-2">​Predominant expertise, however not limited to. Eager to learn & build a legacy</p>
+                    <p class="lead pt-2">​Predominant expertise, however not limited to. Eager to learn & build a legacy</p>                    
                 </div>
             </div>
             <div class="container-fluid padding mt-5 pt-5">
@@ -81,14 +90,14 @@
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <a href="#" style="text-decoration: none; color:black;">
-                            <img src="Images/all.png" class="img-thumbnail shadow-lg border-4 resizing" style="border-radius: 50%;">
+                        <a href="illustrations.html" style="text-decoration: none; color:black;">
+                            <img src="Images/preview/geisha-nft.png" class="img-thumbnail shadow-lg border-4 resizing" style="border-radius: 50%;">
                             <h3 class="display-6">Illustration</h3>
                             <p class="lead p-lg-4">​Describe the service and include any relevant details. Click to edit the text.</p>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
-                        <a href="#" style="text-decoration: none; color:black;">
+                        <a href="modeling.html" style="text-decoration: none; color:black;">
                             <img src="Images/all.png" class="img-thumbnail shadow-lg border-4 resizing" style="border-radius: 50%;">
                             <h3 class="display-6">3D Modelling</h3>
                             <p class="lead p-lg-4 mx-5">​Describe the service and include any relevant details. Click to edit the text.</p>
@@ -106,7 +115,7 @@
                                 <h3 class="mb-4 display-5 text-white">Get in touch</h3>
                                 <p class="lead text-white">+44 0 7788 732034</p>
                                 <p class="lead text-white">lurianncervi@hotmail.com</p>
-                                <div style="color: white;">
+                                <div style="color: white; padding-top: 1rem;">
                                     <i id="icons" class="fa-brands fa-linkedin fa-2xl"></i>                                    
                                 </div>
                             </div>
@@ -157,6 +166,26 @@
         </section>
         
         <script src="js/three.js" async defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+            })
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+            function display_hidden_div(current_div_id, previous_div_id) {
+                var current_div = document.getElementById(div_id);
+                var previous_div = document.getElementById(previous_div_id);
+                if (current_div.style.display == "none") {
+                    current_div.style.display = "block";
+                    previous_div.style.display = "none";
+                }
+            }
+
+            var card = document.getElementById("ma")
+        </script>
     </body>
 </html>
