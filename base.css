@@ -97,45 +97,90 @@
     width: 100vh;
 }
 
+.bg-thank {
+  background-image: url(Images/720172.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.btn-thank:hover{
+  background-color: #909090;
+}
+
+.fade_in{
+  animation: fadeIn 2s;;
+}
+
+.tag{
+
+}
+
+.tag {
+  opacity: 0;
+  transform: translate(0,   5vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.scroll-up {
+  opacity: 0;
+  transform: translate(0,   5vh);
+  transition: all 1s;
+}
+
+.scroll-up.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 @media (min-width: 200px) {
   .resizing {
     width: 22vh;
-    height: 52%;
+    height: 50%;
   }
 }
 
 @media (min-width: 576px) {
   .resizing {
     width: 20.4vh;
-    height: 52%;
+    height: 50%;
   }
 }
 
 @media (min-width: 768px) {
   .resizing {
     width: 20.4vh;
-    height: 52%;
+    height: 50%;
   }
 }
 
 @media (min-width: 992px) {
   .resizing {
     width: 20vh;
-    height: 52%;
+    height: 50%;
   }
 }
 
 @media (min-width: 1200px) {
   .resizing {
     width: 23.2vh;
-    height: 52%;
+    height: 50%;
   }
 }
 
 @media (min-width: 1300px) {
   .resizing {
     width: 24vh;
-    height: 52%;
+    height: 50%;
   }
 }
 
